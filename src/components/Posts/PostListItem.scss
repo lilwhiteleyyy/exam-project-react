@@ -1,0 +1,114 @@
+@import "/src/assets/style/veriables";
+
+.post {
+    background-color: #1E2123;
+    .post-img {
+        // text-align: center;
+        margin-bottom: 25px;
+        width: auto;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .block {
+        width: 100%;
+    }
+
+    .image {
+        overflow: hidden;
+    }
+    .image img {
+        width: 100%;
+        height: 100%;
+        transition: transform 0.5s;  
+    }
+    .image:hover img {
+        transform: scale(1.1);
+    }
+
+    .post-tag {
+        padding: 0 8px;
+        text-decoration: none;
+        width: auto;
+        height: 18px;
+        margin-bottom: 20px;
+        @include font-montserrat (400, 13px);
+        cursor: pointer;
+        text-align: center;
+        margin-left: 25px;
+        color: white;
+        background-color: #1E2123;
+        border: gray 1px solid;
+    }
+    .post-tag:hover {
+        background-color: #ee6059;
+        border: none;
+    }
+    // .post-like {
+    //     background-image: url("/assets/icon/icon-like.svg");
+    //     background-repeat: no-repeat;
+    //     height: 15px;
+    //     width: 15px;
+    //     margin-right: 25px;
+    // }
+    .post-tag-and-like {
+        margin-bottom: 20px;
+    }
+
+    .post-title {
+        text-decoration: none;
+        width: max-content;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        margin-left: 25px;
+        margin-right: 25px;
+        cursor: pointer;
+        @include font-montserrat (700, 22px);
+        color: white;
+    }
+    .post-title:hover {
+        color: #ee6059;
+    }
+    .post-content {
+        margin-left: 25px;
+        margin-right: 25px;
+        margin-bottom: 30px;
+        @include font-open_sans (400, 15px);
+        color: #9999;
+    }
+    
+    .post-author {
+        @include font-montserrat (400, 15px);
+        padding: 0 15px;
+        color: white;
+        position: relative;
+    }
+    .author-avatar {
+        margin-right: 15px;
+        cursor: pointer;
+    }
+    .author-name {
+        color: white;
+        text-decoration: none;
+    }
+    .author-name:hover {
+        color: #ee6059;
+    }
+
+    
+    .authot-navlink {
+        display: flex;
+    }
+    .author-space {
+        position: relative;
+    }
+    .author-icon {
+        @include icon ("/assets/icon/icon-s.svg", 15px, 20px, 15px, 20px)
+    }
+    .icon-quotes {
+        @include icon ("/assets/icon/icon-quotes2.svg", 30px, 30px, 30px, 5px)
+    }
+}
+
+
